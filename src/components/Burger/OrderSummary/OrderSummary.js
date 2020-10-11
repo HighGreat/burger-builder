@@ -13,8 +13,6 @@ const orderSummary = (props) => {
       );
     })
 
-  console.log('update');
-
   return (
     <Aux>
       <h3>Your Order</h3>
@@ -31,3 +29,4 @@ const orderSummary = (props) => {
 };
 
 export default orderSummary;
+
