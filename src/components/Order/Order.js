@@ -11,7 +11,7 @@ const order = (props) => {
         name: ingredientName,
         amount: props.ingredients[ingredientName]
       }
-    )
+    );
   }
 
   const ingredientOutput = ingredients.map(ig => {
@@ -24,14 +24,15 @@ const order = (props) => {
         padding: '5px'
       }}
       key={ig.name}>{ig.name} ({ig.amount})</span>;
-  })
+  });
+
   return (
     <div className={classes.Order}>
       ingredients: {ingredientOutput}
       <p>Price: <strong>USD {Number.parseFloat(props.price).toFixed(2)}</strong></p>
     </div>
   );
-}
+};
 
 export default order;
 
